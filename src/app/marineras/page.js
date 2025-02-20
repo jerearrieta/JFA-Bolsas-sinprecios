@@ -2,19 +2,19 @@ import React from "react";
 import CustomTable from "../components/CustomTable/customTable";
 import Header from "../components/Header/header";
 
-const headers = ["Medidas", "Precios"];
+const headers = ["Medidas"];
 
 const rows = [
-  { medidas: "10x10", precios: "$179 c/u" },
-  { medidas: "10x15", precios: "$215 c/u" },
-  { medidas: "15x15", precios: "$325 c/u" },
-  { medidas: "15x20", precios: "$348 c/u" },
-  { medidas: "20x20", precios: "$460 c/u" },
-  { medidas: "20x25", precios: "$542 c/u" },
-  { medidas: "25x25", precios: "$663 c/u" },
-  { medidas: "25x30", precios: "$745 c/u" },
-  { medidas: "30x30", precios: "$770 c/u" },
-  { medidas: "40x40", precios: "$1225 c/u" },
+  { medidas: "10x10"},
+  { medidas: "10x15"},
+  { medidas: "15x15"},
+  { medidas: "15x20"},
+  { medidas: "20x20"},
+  { medidas: "20x25"},
+  { medidas: "25x25"},
+  { medidas: "25x30"},
+  { medidas: "30x30"},
+  { medidas: "40x40"},
 ];
 
 const marineras = () => {
@@ -31,7 +31,7 @@ const marineras = () => {
         BOLSITA TIPO MARINERA
       </h1>
       <CustomTable headers={headers} rows={rows} uniqueKey="name" />
-      <p className="font-bold text-3xl text-center mt-10">Podes consultar por medidas personalizadas haciendo click en el boton de abajo!</p>
+      <p className="font-bold text-3xl text-center mt-10">Podes consultar por precios y medidas personalizadas haciendo click en el boton de abajo!</p>
       <div className="mt-10 flex justify-center">
         <a
           href={whatsappLink}

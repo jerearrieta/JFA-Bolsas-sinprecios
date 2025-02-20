@@ -2,12 +2,12 @@ import React from "react";
 import CustomTable from "../components/CustomTable/customTable";
 import Header from "../components/Header/header";
 
-const headers = ["Medidas", "Precios"];
+const headers = ["Medidas"];
 
 const rows = [
-  { medidas: "20x30", precios: "$760 c/u" },
-  { medidas: "25x30", precios: "$899 c/u" },
-  { medidas: "30x40", precios: "$1137 c/u" },
+  { medidas: "20x30"},
+  { medidas: "25x30"},
+  { medidas: "30x40"},
 ];
 
 const mochilas = () => {
@@ -24,7 +24,7 @@ const mochilas = () => {
         MOCHILAS
       </h1>
       <CustomTable headers={headers} rows={rows} uniqueKey="name" />
-      <p className="font-bold text-3xl text-center mt-10">Podes consultar por medidas personalizadas haciendo click en el boton de abajo!</p>
+      <p className="font-bold text-3xl text-center mt-10">Podes consultar por precios y medidas personalizadas haciendo click en el boton de abajo!</p>
       <div className="mt-10 flex justify-center">
         <a
           href={whatsappLink}

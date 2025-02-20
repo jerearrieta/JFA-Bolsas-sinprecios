@@ -2,10 +2,10 @@ import React from "react";
 import CustomTable from "../components/CustomTable/customTable";
 import Header from "../components/Header/header";
 
-const headers = ["Medidas", "Precios"];
+const headers = ["Medidas"];
 
 const rows = [
-  { medidas: "20x34", precios: "$1189 c/u" },
+  { medidas: "20x34"},
 ];
 
 const fundasBotellas = () => {

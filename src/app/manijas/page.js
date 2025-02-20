@@ -2,13 +2,13 @@ import React from "react";
 import CustomTable from "../components/CustomTable/customTable";
 import Header from "../components/Header/header";
 
-const headers = ["Medidas", "Precios"];
+const headers = ["Medidas"];
 
 const rows = [
-  { medidas: "20x25", precios: "$564 c/u" },
-  { medidas: "25x30", precios: "$935 c/u" },
-  { medidas: "30x40", precios: "$1157 c/u" },
-  { medidas: "40x40", precios: "$1476 c/u" },
+  { medidas: "20x25"},
+  { medidas: "25x30"},
+  { medidas: "30x40"},
+  { medidas: "40x40"},
 ];
 
 const manijas = () => {
@@ -26,7 +26,7 @@ const manijas = () => {
       </h1>
       <CustomTable headers={headers} rows={rows} uniqueKey="name" />
       <p className="font-bold text-3xl text-center mt-10">
-        Podes consultar por medidas personalizadas haciendo click en el boton de abajo!
+      Podes consultar por precios y medidas personalizadas haciendo click en el boton de abajo!
       </p>
       <div className="mt-10 flex justify-center">
         <a
